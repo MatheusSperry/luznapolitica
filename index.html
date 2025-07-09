@@ -1,190 +1,57 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Luz na Política</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --primary: #ffffff;
-      --secondary: #0e0e0e;
-      --highlight: #ffc107;
-      --overlay: rgba(0, 0, 0, 0.6);
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background-color: var(--secondary);
-      color: var(--primary);
-    }
-
-    header {
-      text-align: center;
-      padding: 4rem 2rem;
-      background-color: #111;
-    }
-
-    header img {
-      max-width: 100px;
-      margin-bottom: 1rem;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
-
-    section {
-      padding: 4rem 2rem;
-      position: relative;
-    }
-
-    .verse {
-      text-align: center;
-      font-style: italic;
-      margin-bottom: 2rem;
-    }
-
-    .highlight-section {
-      background: url('background.jpg') center/cover no-repeat;
-      color: #fff;
-    }
-
-    .overlay {
-      background-color: var(--overlay);
-      padding: 4rem 2rem;
-    }
-
-    .content {
-      max-width: 900px;
-      margin: auto;
-      font-size: 1.2rem;
-      line-height: 1.8;
-    }
-
-    .video, .instagram, .gallery, .form-section {
-      text-align: center;
-      margin-top: 3rem;
-    }
-
-    iframe {
-      width: 100%;
-      max-width: 720px;
-      height: 405px;
-      border: none;
-      border-radius: 12px;
-    }
-
-    .instagram a {
-      display: inline-flex;
-      align-items: center;
-      color: var(--primary);
-      text-decoration: none;
-      margin-top: 1rem;
-      font-size: 1.1rem;
-    }
-
-    .instagram img {
-      width: 24px;
-      margin-right: 8px;
-    }
-
-    .gallery img {
-      max-width: 300px;
-      width: 100%;
-      margin: 1rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-    }
-
-    .form-section form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
-      max-width: 400px;
-      margin: auto;
-    }
-
-    .form-section input {
-      width: 100%;
-      padding: 12px;
-      border-radius: 6px;
-      border: none;
-      font-size: 1rem;
-    }
-
-    .form-section button {
-      padding: 12px 24px;
-      background-color: var(--highlight);
-      border: none;
-      border-radius: 6px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    footer {
-      background-color: #000;
-      padding: 2rem;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #aaa;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="LOGO_LUZ.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="background-overlay"></div>
 
   <header>
-    <img src="LOGO_LUZ.png" alt="Logo">
+    <img src="LOGO_LUZ.png" alt="Logo Luz na Política" class="logo">
     <h1>Luz na Política</h1>
   </header>
 
-  <section>
-    <div class="verse">
-      <p>"Vós sois a luz do mundo..." - Mateus 5:14</p>
-      <p>"Transformai-vos pela renovação do vosso entendimento..." - Romanos 12:2</p>
-    </div>
-    <div class="content">
-      <p>O Luz na Política é um movimento cristão que visa levar os princípios das Escrituras para o meio político. Queremos iluminar um ambiente marcado por corrupção com a verdade do Evangelho.</p>
-    </div>
+  <section class="versiculos">
+    <p>"Vós sois a luz do mundo. Não se pode esconder uma cidade edificada sobre um monte." — Mateus 5:14</p>
+    <p>"E não vos conformeis com este mundo, mas transformai-vos pela renovação da vossa mente..." — Romanos 12:2</p>
+    <p>"Porque nada há encoberto que não haja de revelar-se; nem oculto que não haja de saber-se." — Lucas 12:2</p>
   </section>
 
-  <section class="highlight-section">
-    <div class="overlay">
-      <div class="video">
-        <iframe src="https://www.youtube.com/embed/LZIpZfivOsA" allowfullscreen></iframe>
-      </div>
-      <div class="instagram">
-        <a href="https://instagram.com/somosaluznapolitica" target="_blank">
-          <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png"> @somosaluznapolitica
-        </a>
-      </div>
+  <section class="sobre">
+    <h2>Sobre o Projeto</h2>
+    <p>O <strong>Luz na Política</strong> visa levar a visão cristã para um meio conhecido pela corrupção e pelas mentiras. Nosso objetivo é aplicar as Escrituras Sagradas no ambiente político, sendo luz onde há trevas. Nossa missão é transformar esse cenário com fé, verdade e ação.</p>
+  </section>
+
+  <section class="video">
+    <h2>Apresentação</h2>
+    <iframe width="100%" height="400" src="https://www.youtube.com/embed/LZIpZfivOsA" title="Luz na Política" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <section class="reunioes">
+    <h2>Reuniões Online</h2>
+    <p>Nos encontramos <strong>toda quinta-feira às 20h</strong> de forma online.</p>
+    <p>Participe e seja luz você também!</p>
+  </section>
+
+  <section class="galeria">
+    <h2>Fotos do Projeto</h2>
+    <div class="fotos">
+      <img src="background.png" alt="Foto exemplo">
     </div>
-  </section>
-
-  <section class="gallery">
-    <img src="https://via.placeholder.com/300x200?text=Imagem+1">
-    <img src="https://via.placeholder.com/300x200?text=Imagem+2">
-    <img src="https://via.placeholder.com/300x200?text=Imagem+3">
-  </section>
-
-  <section class="form-section">
-    <h2>Participe</h2>
-    <p>As reuniões acontecem toda quinta-feira às 20h - online</p>
-    <form>
-      <input type="text" placeholder="Nome" required>
-      <input type="text" placeholder="Cidade" required>
-      <input type="email" placeholder="E-mail" required>
-      <button type="submit">Enviar</button>
-    </form>
   </section>
 
   <footer>
-    &copy; 2025 Luz na Política. Todos os direitos reservados.
+    <p>Siga-nos no Instagram</p>
+    <a href="https://www.instagram.com/somosaluznapolitica" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" class="instagram-icon">
+      @somosaluznapolitica
+    </a>
   </footer>
-
 </body>
 </html>
