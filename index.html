@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -12,7 +13,8 @@
     }
 
     body {
-      background-color: #000;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
       color: #fff;
       font-family: 'Roboto', sans-serif;
       margin: 0;
@@ -22,6 +24,7 @@
     header {
       text-align: center;
       padding: 30px 20px;
+      background-color: rgba(0, 0, 0, 0.8);
     }
 
     header img {
@@ -36,7 +39,7 @@
     }
 
     .versiculos {
-      background-color: #111;
+      background-color: rgba(0, 0, 0, 0.7);
       padding: 30px 20px;
       text-align: center;
       font-style: italic;
@@ -51,6 +54,7 @@
       max-width: 800px;
       margin: auto;
       line-height: 1.6;
+      background-color: rgba(0, 0, 0, 0.7);
     }
 
     .conteudo h2 {
@@ -61,7 +65,7 @@
 
     .video {
       text-align: center;
-      margin: 40px 0;
+      margin: 40px 0 10px 0;
     }
 
     iframe {
@@ -69,6 +73,23 @@
       max-width: 720px;
       height: 405px;
       border: none;
+    }
+
+    .instagram {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .instagram a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2em;
+    }
+
+    .instagram img {
+      width: 24px;
+      vertical-align: middle;
+      margin-right: 8px;
     }
 
     .galeria {
@@ -89,7 +110,7 @@
     .reunioes {
       text-align: center;
       padding: 40px 20px;
-      background-color: #111;
+      background-color: rgba(0, 0, 0, 0.7);
     }
 
     .reunioes h3 {
@@ -97,14 +118,26 @@
       font-size: 1.8em;
     }
 
-    .convite {
+    .formulario {
       text-align: center;
       margin: 40px 0;
-      font-size: 1.2em;
     }
 
-    .convite strong {
-      color: #ffcc00;
+    .formulario input {
+      padding: 10px;
+      margin: 10px;
+      border: none;
+      border-radius: 4px;
+      width: 200px;
+    }
+
+    .formulario button {
+      padding: 10px 20px;
+      background-color: #003366;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
     }
 
     footer {
@@ -144,6 +177,12 @@
     <iframe src="https://www.youtube.com/embed/LZIpZfivOsA" title="Apresentação Luz na Política" allowfullscreen></iframe>
   </div>
 
+  <div class="instagram">
+    <a href="https://instagram.com/somosaluznapolitica" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram Logo"/>@somosaluznapolitica
+    </a>
+  </div>
+
   <section class="galeria">
     <img src="https://via.placeholder.com/300x200?text=Foto+1" alt="Foto 1">
     <img src="https://via.placeholder.com/300x200?text=Foto+2" alt="Foto 2">
@@ -155,8 +194,15 @@
     <p>Online e abertas para todos que desejam ser luz no meio político.</p>
   </section>
 
-  <div class="convite">
-    <p>Junte-se a nós e <strong>seja luz</strong> em um ambiente que precisa de transformação!</p>
+  <div class="formulario">
+    <h2>Entre em contato</h2>
+    <form>
+      <input type="text" placeholder="Nome" required />
+      <input type="text" placeholder="Cidade" required />
+      <input type="email" placeholder="E-mail" required />
+      <br>
+      <button type="submit">Enviar</button>
+    </form>
   </div>
 
   <footer>
